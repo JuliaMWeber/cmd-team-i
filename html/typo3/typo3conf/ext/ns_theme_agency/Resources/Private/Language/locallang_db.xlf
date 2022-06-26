@@ -27,6 +27,12 @@
             <trans-unit id="wizard.ns_teaser.desc">
                 <source>Teaser and Team element with title, text and image.</source>
             </trans-unit>
+            <trans-unit id="wizard.ns_accordion">
+                <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="wizard.ns_accordion.desc">
+                <source>Accordion mit Teaser Element.</source>
+            </trans-unit>
             <trans-unit id="wizard.ns_about">
                 <source>About</source>
             </trans-unit>

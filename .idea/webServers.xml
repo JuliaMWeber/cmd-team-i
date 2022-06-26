@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c36a4a26-2e24-4635-a3e9-001447efc449" name="cms" url="http://p616353.mittwaldserver.info">
+        <fileTransfer accessType="SFTP" host="p616353.mittwaldserver.info" port="22" sshConfigId="0fc8d662-2ce8-4923-8dcc-cffb3ba887f5" sshConfig="p616353@p616353.mittwaldserver.info:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

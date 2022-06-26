@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export PHP_EXTENSIONS_DIR=/usr/local/php/extensions
+export PHP_INI_SCAN_DIR=/usr/local/php/etc/conf.d
+
+export OPENSSL_CONF=/etc/ssl/openssl.cnf
+export LO_PATH=/usr/local/php/lib64/locale
+export GCONV_PATH=/usr/local/php/lib64/gconv
+export MAGICK_C0DER_MODULE_PATH=/usr/local/php/lib64/ImageMagick-6.9.10/modules-Q16/coders
+
+exec /usr/local/php/usr/bin/php-cgi "${@}"

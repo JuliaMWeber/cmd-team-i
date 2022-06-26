@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="p616353.mittwaldserver.info" id="0fc8d662-2ce8-4923-8dcc-cffb3ba887f5" port="22" nameFormat="DESCRIPTIVE" username="p616353" useOpenSSHConfig="false" />
+    </configs>
+  </component>
+</project>

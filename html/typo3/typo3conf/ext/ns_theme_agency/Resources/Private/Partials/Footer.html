@@ -32,16 +32,18 @@
 					</f:if>
 				</ul>
 			</div>
-			<!-- <div class="col-md-3">
-				<f:render section="FooterMenu" arguments="{FooterMenu: FooterMenu}" />
-			</div> -->
 			<div class="col-md-4">
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#">Datenschuetz</a></li>
-					<li class="list-inline-item"><a href="#">Impressum</a></li>
-				</ul>
-
+				<f:render section="FooterMenu" arguments="{FooterMenu: FooterMenu}" />
+				<f:cObject typoscriptObjectPath="lib.footer_left" />
 			</div>
+			<!-- <div class="col-md-4">
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="https://www.thm.de/site/datenschutz.html"
+							target="_blank">Datenschutz</a></li>
+					<li class="list-inline-item"><a href="https://www.thm.de/site/impressum.html"
+							target="_blank">Impressum</a></li>
+				</ul>
+			</div> -->
 		</div>
 	</div>
 </footer>
@@ -51,7 +53,7 @@
 		<ul class="list-inline quicklinks">
 			<f:for each="{FooterMenu}" as="item">
 				<li class="list-inline-item">
-					<a href="{item.link}" id="nav-item-{item.data.uid}">
+					<a href="{item.link}" id="nav-item-{item.data.uid}" target="_blank">
 						{item.title}
 					</a>
 				</li>

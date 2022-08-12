@@ -145,6 +145,16 @@
                                             </config>
                                         </TCEforms>
                                     </twitter>
+                                     <mail>
+                                        <TCEforms>
+                                            <label>LLL:EXT:ns_theme_agency/Resources/Private/Language/locallang_flex.xlf:general.mail</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                                <eval>trim</eval>
+                                            </config>
+                                        </TCEforms>
+                                    </mail>
                                     <facebook>
                                         <TCEforms>
                                             <label>LLL:EXT:ns_theme_agency/Resources/Private/Language/locallang_flex.xlf:general.facebook</label>

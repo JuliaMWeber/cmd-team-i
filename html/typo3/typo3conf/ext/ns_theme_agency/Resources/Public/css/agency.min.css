@@ -13,11 +13,13 @@ p {
 }
 
 a {
-    color: #80ba24
+    color: #fff;
+    text-decoration: none;
 }
 
 a:hover {
     color: #80ba24;
+    text-decoration: none;
 }
 
 .text-primary {

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="lehracc">
+    <div class="lehrende">
+        <div class="lehrimg">
+            <f:for each="{data.tx_mask_bild}" as="file">
+                <f:media file="{file}" width="200"/>
+                {file.description}
+            </f:for>
+        </div>
+        <div class="lehrname">
+            <f:if condition="{data.header}">
+                {data.header}
+            </f:if>
+        </div>
+        <div class="lehrschwer">
+            <f:if condition="{data.subheader}">
+                {data.subheader}
+            </f:if>
+        </div>
+        <div class="lehrlinks">
+            <f:if condition="{data.tx_mask_mail}">
+                <a href="{data.tx_mask_mail}" target="_blank" rel="noreffer"><i class="fa-solid fa-envelope"></i></a>
+            </f:if>
+
+            <f:if condition="{data.tx_mask_datenblatt}">
+                <a href="{data.tx_mask_datenblatt}"><i class="fa-solid fa-address-card"></i></a>
+            </f:if>
+        </div>
+    </div>
+</div>

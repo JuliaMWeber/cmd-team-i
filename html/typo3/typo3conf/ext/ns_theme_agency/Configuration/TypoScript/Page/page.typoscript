@@ -178,8 +178,8 @@ lib {
         1 = TEXT
         1 {
             current = 1
-            strftime = %Y
-            wrap = &copy;&nbsp;|&nbsp;
+            strftime = %y
+            wrap = Copyright &copy; CMS SoSe|&nbsp;
         }
 
         2 = TEXT
@@ -187,5 +187,82 @@ lib {
             value = {$ns_basetheme.website.settings.copyright}
             wrap = |
         }
+        2 >
     }
 }
+// lib.copyright.1.wrap = Copyright &copy; CMS SoSe|&nbsp;
+// lib.copyright.1.strftime = %y
+
+
+lib.primarymenu = HMENU
+lib.primarymenu {
+  special = directory
+  //soll eine variable sein
+    special.value = 34 
+  wrap = <ul class="navbar-nav text-uppercase ml-auto"> | </ul>
+#   wrap = <ul class="nav navbar-nav navbar-right">|</ul>
+  
+  1 = TMENU
+  1  {
+    expAll = 1
+    NO = 1
+    NO {
+      wrapItemAndSub = <li class="nav-item"> | </li>
+    }
+    
+    ACT < .NO
+    ACT {
+     wrapItemAndSub = <li class="nav-item"> | </li>
+   }
+    
+    IFSUB < .NO
+      IFSUB {
+        wrapItemAndSub = <li class="dropdown"> | </li>
+        linkWrap = | <span class="extendedicon"></span>
+        ATagParams = class="dropdown-toggle" role="button" data-toggle="dropdown"
+        ATagBeforeWrap = 1
+      }
+    ACTIFSUB < .IFSUB
+      ACTIFSUB {
+        wrapItemAndSub = <li class="active dropdown"> | </li>
+      }
+     
+  }
+}
+
+2 < .1
+2 {
+  wrap = <ul class="dropdown-menu">|</ul>
+}
+
+lib.footer_left = HMENU
+lib.footer_left {
+  special = directory
+  //soll eine variable sein
+    special.value = 75 
+  wrap = <ul class="list-inline quicklinks"> | </ul>
+#   wrap = <ul class="nav navbar-nav navbar-right">|</ul>
+  
+  1 = TMENU
+  1  {
+    expAll = 1
+    NO = 1
+    NO {
+      wrapItemAndSub = <li class="list-inline-item"> | </li>
+    }
+    
+    ACT < .NO
+    ACT {
+     wrapItemAndSub = <li class="list-inline-item"> | </li>
+   }
+    
+     
+  }
+}
+
+2 < .1
+2 {
+  wrap = <ul class="dropdown-menu">|</ul>
+}
+
+//page.5 < PRIMARYMENU

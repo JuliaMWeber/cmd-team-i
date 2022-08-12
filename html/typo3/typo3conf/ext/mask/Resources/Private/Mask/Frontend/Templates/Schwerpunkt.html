@@ -1,0 +1,16 @@
+<p>
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+
+<f:if condition="{data.tx_mask_schwerpunktdoz}">
+<div class="schwerpunktdozenten">
+    <f:for each="{data.tx_mask_schwerpunktdoz}" as="data_item">
+        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+    </f:for>
+</div>
+</f:if>
+
+
+</p>
+

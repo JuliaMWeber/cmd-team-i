@@ -1,3 +1,0 @@
-#!/bin/bash
-export LOCPATH="/usr/lib/x86_64-linux-gnu/locale"
-exec /usr/local/nano/usr/bin/nano $@

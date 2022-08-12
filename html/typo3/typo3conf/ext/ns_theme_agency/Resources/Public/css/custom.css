@@ -14,14 +14,14 @@ input[type=number] {
 }
 
 li.nav-item.active a {
-  color: #fed136 !important;
+  color: #80ba24 !important;
 }
 
-section li{
+section li {
   margin: 20px;
 }
 
-.single-page-section{
+.single-page-section {
   padding: 0;
 }
 
@@ -105,161 +105,228 @@ form button#sendMessageButton {
 
 h2.section-heading {
   margin-top: 50px;
+  margin-bottom: 2em;
 }
 
-footer .quicklinks a{
-    color: #fed136;
+footer .quicklinks a {
+  color: #80ba24;
 }
-.timeline-body p{
-    color:#6c757d;
+
+.timeline-body p {
+  color: #6c757d;
 }
-.fa-stack{
-    width: 2em;
-    transition: 0.3s;
+
+.fa-stack {
+  width: 2em;
+  transition: 0.3s;
 }
+
 .fa-stack:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-.fa-stack .fa-inverse{
-    font-size: 0.9em;
+
+.fa-stack .fa-inverse {
+  font-size: 0.9em;
 }
-footer .quicklinks a:hover{
-    text-decoration: underline !important;
+
+footer .quicklinks a:hover {
+  text-decoration: underline !important;
 }
-footer .quicklinks a:hover{
-    text-decoration: none;
-    color: #fed136;
+
+footer .quicklinks a:hover {
+  text-decoration: none;
+  color: #80ba24;
 }
-.team-member img{
-    border: 7px solid rgba(0,0,0,.1);
-    transition: 0.3s;
+
+.team-member img {
+  border: 7px solid rgba(0, 0, 0, .1);
+  transition: 0.3s;
 }
+
 .team-member img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover img{
-    width: 100% !important;
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover img {
+  width: 100% !important;
 }
-#portfolio{
-    padding:0;
+
+#portfolio {
+  padding: 0;
 }
-.error.help-block{
-    position: absolute;
-    color:#dc3545;
-    font-weight: 600;
+
+.error.help-block {
+  position: absolute;
+  color: #dc3545;
+  font-weight: 600;
 }
-.highed p{
-    color:#6c757d!important
+
+.highed p {
+  color: #6c757d !important
 }
-.content #mainNav{
-    background-color: #212529;
+
+.content #mainNav {
+  background-color: #212529;
 }
-.content nav.fixed-top+ section{
-    padding-top: 150px;
-    min-height: calc(100vh - 110px);
+
+.content nav.fixed-top+section {
+  padding-top: 150px;
+  min-height: calc(100vh - 110px);
 }
+
 .timeline-image {
-    transition: 0.3s;
+  transition: 0.3s;
 }
+
 .timeline-image:hover {
   transform: scale(1.1);
 }
+
 .timeline-image p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 18px;
-    line-height: 26px;
-    width: 100%;
-    font-weight: 700;
-    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+  font-weight: 700;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-@media (min-width: 1200px){
-    #portfolio .portfolio-item .portfolio-link{
-        max-height: 263px;
-        overflow: hidden;
-    }
+
+@media (min-width: 1200px) {
+  #portfolio .portfolio-item .portfolio-link {
+    max-height: 263px;
+    overflow: hidden;
+  }
 }
-@media (min-width: 992px){
-    #portfolio .portfolio-item .portfolio-link{
-        max-height: 217px;
-        overflow: hidden;
-    }
+
+@media (min-width: 992px) {
+  #portfolio .portfolio-item .portfolio-link {
+    max-height: 217px;
+    overflow: hidden;
+  }
 }
-@media (min-width: 768px){
-    #portfolio .portfolio-item .portfolio-link{
-        max-height: 157px;
-        overflow: hidden;
-    }
-    section,.portfolio {
-        padding: 65px 0;
-    }
-    .timeline>li .timeline-image{
-        width: 130px;
-        height: 130px;
-        margin-left: -65px;
-    }
+
+@media (min-width: 768px) {
+  #portfolio .portfolio-item .portfolio-link {
+    max-height: 157px;
+    overflow: hidden;
+  }
+
+  section,
+  .portfolio {
+    padding: 65px 0;
+  }
+
+  .timeline>li .timeline-image {
+    width: 130px;
+    height: 130px;
+    margin-left: -65px;
+  }
 }
+
 @media (min-width: 767px) {
   .portfolio-section .portfolio-item {
     margin: 0 8% 30px;
   }
 }
-@media(max-width: 767px){
-    .timeline>li .timeline-image{
-        border-width: 4px;
-        width: 100px;
-        height: 100px;
-    }
-    .timeline:before{
-        left:54px;
-    }
-    .timeline>li .timeline-panel,.timeline>li.timeline-inverted>.timeline-panel{
-        padding: 0 0 0 110px;
-    }
-    .error.help-block{
-      font-size: 15px;
-    }
-}
-@media (min-width:565px){
-    #portfolio .portfolio-item .portfolio-link{
-        max-height: 180px;
-        overflow: hidden;
-    }
-}
-@media (max-width:992px){
-    section,.portfolio{
-        padding:50px 0;
-    }
-    section h3.section-subheading{
-        margin-bottom: 40px;
-    }
-   .content nav.fixed-top+ section{
-        padding-top: 100px;
-    }
-    .timeline-image p{
-        font-size: 14px;
-        line-height: 17px;
-    }
-}
-.content section{
-    min-height: calc(100vh - 110px);
+
+@media(max-width: 767px) {
+  .timeline>li .timeline-image {
+    border-width: 4px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .timeline:before {
+    left: 54px;
+  }
+
+  .timeline>li .timeline-panel,
+  .timeline>li.timeline-inverted>.timeline-panel {
+    padding: 0 0 0 110px;
+  }
+
+  .error.help-block {
+    font-size: 15px;
+  }
 }
 
-.frame-space-before-extra-small { margin-top: 0.5em; }
-.frame-space-before-small { margin-top: 1em; }
-.frame-space-before-medium { margin-top: 2em; }
-.frame-space-before-large { margin-top: 3em; }
-.frame-space-before-extra-large { margin-top: 4em; }
-.frame-space-after-extra-small { margin-bottom: 0.5em; }
-.frame-space-after-small { margin-bottom: 1em; }
-.frame-space-after-medium { margin-bottom: 2em; }
-.frame-space-after-large { margin-bottom: 3em; }
-.frame-space-after-extra-large { margin-bottom: 4em; }
+@media (min-width:565px) {
+  #portfolio .portfolio-item .portfolio-link {
+    max-height: 180px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width:992px) {
+
+  section,
+  .portfolio {
+    padding: 50px 0;
+  }
+
+  section h3.section-subheading {
+    margin-bottom: 40px;
+  }
+
+  .content nav.fixed-top+section {
+    padding-top: 100px;
+  }
+
+  .timeline-image p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.content section {
+  min-height: calc(100vh - 110px);
+}
+
+.frame-space-before-extra-small {
+  margin-top: 0.5em;
+}
+
+.frame-space-before-small {
+  margin-top: 1em;
+}
+
+.frame-space-before-medium {
+  margin-top: 2em;
+}
+
+.frame-space-before-large {
+  margin-top: 3em;
+}
+
+.frame-space-before-extra-large {
+  margin-top: 4em;
+}
+
+.frame-space-after-extra-small {
+  margin-bottom: 0.5em;
+}
+
+.frame-space-after-small {
+  margin-bottom: 1em;
+}
+
+.frame-space-after-medium {
+  margin-bottom: 2em;
+}
+
+.frame-space-after-large {
+  margin-bottom: 3em;
+}
+
+.frame-space-after-extra-large {
+  margin-bottom: 4em;
+}
 
 .site-main {
-    padding-top: 65px;
+  padding-top: 65px;
 }
 
 /* cms page css */
@@ -563,7 +630,7 @@ header.masthead .intro-text .intro-lead-in {
   }
 }
 
-#contact{
+#contact {
   margin-top: -80px;
 }
 
@@ -581,3 +648,81 @@ header.masthead .intro-text .intro-lead-in {
   width: 120px;
   height: 40px;
 }
+
+
+/*accordeon*/
+.accordion {
+  background-color: #4a5c66;
+  color: #80ba24;
+  cursor: pointer;
+  padding: 18px;
+  width: 95%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #4a5c66;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+/*Lehrende*/
+.schwerpunktdozenten{
+  display: flex;
+  flex-direction: row;
+  background-color: #80ba24;
+}
+.lehrperson{
+  display: flex;
+  flex-direction: row;
+  background-color: #80ba24;
+
+}
+.lehracc{
+  background-color: #80ba24;
+  display: flex;
+  flex-direction: row;
+}
+.lehrende{
+  float: start;
+  float-defer-column: revert;
+  /*display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;*/
+}
+.lehrimg{
+
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.lehrname{
+
+  font-weight: bolder;
+  font-size: large;
+}
+.lehrschwer{
+font-style: italic ;
+}
+.lehrmail{
+
+
+}
+.lehrdaten{
+
+
+}
+
+

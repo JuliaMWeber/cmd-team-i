@@ -6,6 +6,18 @@
             <trans-unit id="palette.access">
                 <source>Access</source>
             </trans-unit>
+            <trans-unit id="general.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="general.text">
+                <source>Schwerpunkt</source>
+            </trans-unit>
+            <trans-unit id="general.mail">
+                <source>Email Adresse</source>
+            </trans-unit>
+            <trans-unit id="general.contact">
+                <source>Kontakt Link</source>
+            </trans-unit>
             <trans-unit id="general.headline">
                 <source>Headline</source>
             </trans-unit>

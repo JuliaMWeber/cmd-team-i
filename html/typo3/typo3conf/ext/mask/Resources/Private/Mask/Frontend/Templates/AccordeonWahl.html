@@ -1,0 +1,8 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.tx_mask_schwerpunkte}">
+    <f:for each="{data.tx_mask_schwerpunkte}" as="data_item">
+        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+    </f:for>
+</f:if>

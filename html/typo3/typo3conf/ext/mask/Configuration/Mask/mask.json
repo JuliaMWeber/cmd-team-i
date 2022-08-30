@@ -7,12 +7,10 @@
                     "color": "#000000",
                     "colorOverlay": "#000000",
                     "columns": [
-                        "header",
                         "tx_mask_titel"
                     ],
                     "description": "",
                     "descriptions": [
-                        "",
                         ""
                     ],
                     "icon": "",
@@ -20,7 +18,6 @@
                     "key": "accordeon",
                     "label": "Accordeon_Schwerpunkte",
                     "labels": [
-                        "",
                         ""
                     ],
                     "shortLabel": "",
@@ -30,12 +27,10 @@
                     "color": "#000000",
                     "colorOverlay": "#000000",
                     "columns": [
-                        "header",
-                        "tx_mask_wahlschwerpunkte"
+                        "tx_mask_schwerpunktwahlmodule"
                     ],
                     "description": "",
                     "descriptions": [
-                        "",
                         ""
                     ],
                     "icon": "",
@@ -43,37 +38,10 @@
                     "key": "accordeon_wahl",
                     "label": "Accordeon_Wahl",
                     "labels": [
-                        "Wahlpflichtmodule",
                         ""
                     ],
                     "shortLabel": "",
                     "sorting": 2
-                },
-                "elementetest": {
-                    "color": "#000000",
-                    "colorOverlay": "#000000",
-                    "columns": [
-                        "header",
-                        "tx_mask_text",
-                        "tx_mask_doze"
-                    ],
-                    "description": "",
-                    "descriptions": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "icon": "",
-                    "iconOverlay": "",
-                    "key": "elementetest",
-                    "label": "ElementeTest",
-                    "labels": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "shortLabel": "",
-                    "sorting": 7
                 },
                 "lehrende": {
                     "color": "#000000",
@@ -137,12 +105,10 @@
                     "color": "#000000",
                     "colorOverlay": "#000000",
                     "columns": [
-                        "tx_mask_fragen",
-                        "tx_mask_testtext"
+                        "tx_mask_header"
                     ],
                     "description": "",
                     "descriptions": [
-                        "",
                         ""
                     ],
                     "icon": "",
@@ -150,11 +116,10 @@
                     "key": "omar_accordeon",
                     "label": "Omar Accordeon",
                     "labels": [
-                        "liste mit fragen",
-                        ""
+                        "Header"
                     ],
                     "shortLabel": "",
-                    "sorting": 6
+                    "sorting": 9
                 },
                 "schwerpunkt": {
                     "color": "#000000",
@@ -215,12 +180,10 @@
                     "color": "#000000",
                     "colorOverlay": "#000000",
                     "columns": [
-                        "header",
-                        "tx_mask_module"
+                        "tx_mask_schwerpunktwahlpflicht"
                     ],
                     "description": "",
                     "descriptions": [
-                        "",
                         ""
                     ],
                     "icon": "",
@@ -228,7 +191,6 @@
                     "key": "wahl_schwerpunkte",
                     "label": "wahl_schwerpunkte",
                     "labels": [
-                        "Schwerpunkt",
                         ""
                     ],
                     "shortLabel": "",
@@ -251,14 +213,9 @@
                         "tx_mask_datenblatt": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
-                "tx_mask_doze": {
+                "tx_mask_header": {
                     "tt_content": {
-                        "tx_mask_doze": "int(11) unsigned DEFAULT '0' NOT NULL"
-                    }
-                },
-                "tx_mask_fragen": {
-                    "tt_content": {
-                        "tx_mask_fragen": "int(11) unsigned DEFAULT '0' NOT NULL"
+                        "tx_mask_header": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
                 "tx_mask_leistungen": {
@@ -281,29 +238,24 @@
                         "tx_mask_mail": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
-                "tx_mask_module": {
-                    "tt_content": {
-                        "tx_mask_module": "int(11) unsigned DEFAULT '0' NOT NULL"
-                    }
-                },
                 "tx_mask_schwerpunktdoz": {
                     "tt_content": {
                         "tx_mask_schwerpunktdoz": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
+                "tx_mask_schwerpunktwahlmodule": {
+                    "tt_content": {
+                        "tx_mask_schwerpunktwahlmodule": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_schwerpunktwahlpflicht": {
+                    "tt_content": {
+                        "tx_mask_schwerpunktwahlpflicht": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
                 "tx_mask_team": {
                     "tt_content": {
                         "tx_mask_team": "varchar(255) DEFAULT '' NOT NULL"
-                    }
-                },
-                "tx_mask_testtext": {
-                    "tt_content": {
-                        "tx_mask_testtext": "mediumtext"
-                    }
-                },
-                "tx_mask_text": {
-                    "tt_content": {
-                        "tx_mask_text": "mediumtext"
                     }
                 },
                 "tx_mask_titel": {
@@ -319,11 +271,6 @@
                 "tx_mask_vorleistungen": {
                     "tt_content": {
                         "tx_mask_vorleistungen": "varchar(255) DEFAULT '' NOT NULL"
-                    }
-                },
-                "tx_mask_wahlschwerpunkte": {
-                    "tt_content": {
-                        "tx_mask_wahlschwerpunkte": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 }
             },
@@ -419,46 +366,7 @@
                     "key": "datenblatt",
                     "type": "link"
                 },
-                "tx_mask_doze": {
-                    "cTypes": [
-                        "mask_lehrende"
-                    ],
-                    "config": {
-                        "appearance": {
-                            "collapseAll": 1,
-                            "enabledControls": {
-                                "delete": 1,
-                                "dragdrop": 1,
-                                "hide": 1,
-                                "info": 1,
-                                "localize": 1,
-                                "new": 1,
-                                "sort": 1
-                            },
-                            "levelLinksPosition": "top",
-                            "showAllLocalizationLink": 1,
-                            "showNewRecordLink": 1,
-                            "showPossibleLocalizationRecords": 1,
-                            "useSortable": 1
-                        },
-                        "foreign_sortby": "sorting",
-                        "foreign_table": "tt_content",
-                        "overrideChildTca": {
-                            "columns": {
-                                "colPos": {
-                                    "config": {
-                                        "default": 999
-                                    }
-                                }
-                            }
-                        },
-                        "type": "inline"
-                    },
-                    "fullKey": "tx_mask_doze",
-                    "key": "doze",
-                    "type": "content"
-                },
-                "tx_mask_fragen": {
+                "tx_mask_header": {
                     "config": {
                         "appearance": {
                             "collapseAll": 1,
@@ -483,8 +391,8 @@
                         "foreign_table_field": "parenttable",
                         "type": "inline"
                     },
-                    "fullKey": "tx_mask_fragen",
-                    "key": "fragen",
+                    "fullKey": "tx_mask_header",
+                    "key": "header",
                     "type": "inline"
                 },
                 "tx_mask_leistungen": {
@@ -552,45 +460,6 @@
                     "key": "mail",
                     "type": "link"
                 },
-                "tx_mask_module": {
-                    "cTypes": [
-                        "mask_wahl"
-                    ],
-                    "config": {
-                        "appearance": {
-                            "collapseAll": 1,
-                            "enabledControls": {
-                                "delete": 1,
-                                "dragdrop": 1,
-                                "hide": 1,
-                                "info": 1,
-                                "localize": 1,
-                                "new": 1,
-                                "sort": 1
-                            },
-                            "levelLinksPosition": "top",
-                            "showAllLocalizationLink": 1,
-                            "showNewRecordLink": 1,
-                            "showPossibleLocalizationRecords": 1,
-                            "useSortable": 1
-                        },
-                        "foreign_sortby": "sorting",
-                        "foreign_table": "tt_content",
-                        "overrideChildTca": {
-                            "columns": {
-                                "colPos": {
-                                    "config": {
-                                        "default": 999
-                                    }
-                                }
-                            }
-                        },
-                        "type": "inline"
-                    },
-                    "fullKey": "tx_mask_module",
-                    "key": "module",
-                    "type": "content"
-                },
                 "tx_mask_schwerpunktdoz": {
                     "cTypes": [
                         "mask_lehrende"
@@ -630,6 +499,64 @@
                     "key": "schwerpunktdoz",
                     "type": "content"
                 },
+                "tx_mask_schwerpunktwahlmodule": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_schwerpunktwahlmodule",
+                    "key": "schwerpunktwahlmodule",
+                    "type": "inline"
+                },
+                "tx_mask_schwerpunktwahlpflicht": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_schwerpunktwahlpflicht",
+                    "key": "schwerpunktwahlpflicht",
+                    "type": "inline"
+                },
                 "tx_mask_team": {
                     "config": {
                         "type": "input"
@@ -637,24 +564,6 @@
                     "fullKey": "tx_mask_team",
                     "key": "team",
                     "type": "string"
-                },
-                "tx_mask_testtext": {
-                    "config": {
-                        "type": "text",
-                        "wrap": "virtual"
-                    },
-                    "fullKey": "tx_mask_testtext",
-                    "key": "testtext",
-                    "type": "text"
-                },
-                "tx_mask_text": {
-                    "config": {
-                        "type": "text",
-                        "wrap": "virtual"
-                    },
-                    "fullKey": "tx_mask_text",
-                    "key": "text",
-                    "type": "text"
                 },
                 "tx_mask_titel": {
                     "config": {
@@ -700,8 +609,93 @@
                     "fullKey": "tx_mask_vorleistungen",
                     "key": "vorleistungen",
                     "type": "string"
+                }
+            }
+        },
+        "tx_mask_header": {
+            "sql": {
+                "tx_mask_prof": {
+                    "tx_mask_header": {
+                        "tx_mask_prof": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
                 },
-                "tx_mask_wahlschwerpunkte": {
+                "tx_mask_schwerpunkt": {
+                    "tx_mask_header": {
+                        "tx_mask_schwerpunkt": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_prof": {
+                    "cTypes": [
+                        "ns_teaser"
+                    ],
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_prof",
+                    "inlineParent": "tx_mask_header",
+                    "key": "prof",
+                    "label": "Professoren",
+                    "order": 2,
+                    "type": "content"
+                },
+                "tx_mask_schwerpunkt": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_schwerpunkt",
+                    "inlineParent": "tx_mask_header",
+                    "key": "schwerpunkt",
+                    "label": "Schwerpunktname",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_schwerpunktwahlmodule": {
+            "sql": {
+                "tx_mask_module": {
+                    "tx_mask_schwerpunktwahlmodule": {
+                        "tx_mask_module": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_schwerpunktname": {
+                    "tx_mask_schwerpunktwahlmodule": {
+                        "tx_mask_schwerpunktname": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_module": {
                     "cTypes": [
                         "mask_wahl_schwerpunkte"
                     ],
@@ -736,32 +730,88 @@
                         },
                         "type": "inline"
                     },
-                    "fullKey": "tx_mask_wahlschwerpunkte",
-                    "key": "wahlschwerpunkte",
+                    "fullKey": "tx_mask_module",
+                    "inlineParent": "tx_mask_schwerpunktwahlmodule",
+                    "key": "module",
+                    "order": 2,
                     "type": "content"
+                },
+                "tx_mask_schwerpunktname": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_schwerpunktname",
+                    "inlineParent": "tx_mask_schwerpunktwahlmodule",
+                    "key": "schwerpunktname",
+                    "order": 1,
+                    "type": "string"
                 }
             }
         },
-        "tx_mask_fragen": {
+        "tx_mask_schwerpunktwahlpflicht": {
             "sql": {
-                "tx_mask_antwort": {
-                    "tx_mask_fragen": {
-                        "tx_mask_antwort": "mediumtext"
+                "tx_mask_modul": {
+                    "tx_mask_schwerpunktwahlpflicht": {
+                        "tx_mask_modul": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_modulname": {
+                    "tx_mask_schwerpunktwahlpflicht": {
+                        "tx_mask_modulname": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 }
             },
             "tca": {
-                "tx_mask_antwort": {
+                "tx_mask_modul": {
+                    "cTypes": [
+                        "mask_wahl"
+                    ],
                     "config": {
-                        "type": "text",
-                        "wrap": "virtual"
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
                     },
-                    "fullKey": "tx_mask_antwort",
-                    "inlineParent": "tx_mask_fragen",
-                    "key": "antwort",
-                    "label": "antwort",
+                    "fullKey": "tx_mask_modul",
+                    "inlineParent": "tx_mask_schwerpunktwahlpflicht",
+                    "key": "modul",
+                    "order": 2,
+                    "type": "content"
+                },
+                "tx_mask_modulname": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_modulname",
+                    "inlineParent": "tx_mask_schwerpunktwahlpflicht",
+                    "key": "modulname",
                     "order": 1,
-                    "type": "text"
+                    "type": "string"
                 }
             }
         },

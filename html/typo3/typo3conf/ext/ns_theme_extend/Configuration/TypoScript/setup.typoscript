@@ -1,0 +1,2 @@
+# Includes Page Configuration
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_theme_extend/Configuration/TypoScript/Page" extensions="typoscript">

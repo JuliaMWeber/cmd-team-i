@@ -16,7 +16,7 @@
                 <source>Email Adresse</source>
             </trans-unit>
             <trans-unit id="general.contact">
-                <source>Kontakt Link</source>
+                <source>Kontakt adresse</source>
             </trans-unit>
             <trans-unit id="general.headline">
                 <source>Headline</source>
@@ -68,6 +68,9 @@
             </trans-unit>
             <trans-unit id="general.twitter">
                 <source>Twitter Link</source>
+            </trans-unit>
+            <trans-unit id="general.card">
+                <source>Kontakt</source>
             </trans-unit>
             <trans-unit id="general.facebook">
                 <source>Facebook Link</source>

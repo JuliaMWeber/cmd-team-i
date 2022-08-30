@@ -13,7 +13,7 @@
                 <source>Menu</source>
             </trans-unit>
             <trans-unit id="close">
-                <source>Projekt Abschliessen</source>
+                <source>Schließen</source>
             </trans-unit>
 		</body>
 	</file>

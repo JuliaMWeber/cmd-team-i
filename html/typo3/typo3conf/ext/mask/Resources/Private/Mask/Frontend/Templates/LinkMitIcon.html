@@ -1,0 +1,8 @@
+<f:if condition="{data.tx_mask_button}">
+    <f:for each="{data.tx_mask_button}" as="data_item">
+        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+    </f:for>
+</f:if>
+<f:if condition="{data.tx_mask_link}">
+    <f:link.typolink parameter="{data.tx_mask_link}"></f:link.typolink>
+</f:if>

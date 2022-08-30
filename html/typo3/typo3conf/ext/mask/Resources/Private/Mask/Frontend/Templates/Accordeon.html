@@ -13,14 +13,15 @@
             </button>
             <div class="panel">
                 <p class="lehrperson">
+                <li class="lehrperson">
                     <f:if condition="{data_item.tx_mask_doz}">
                         <f:for each="{data_item.tx_mask_doz}" as="data_item_item">
                             <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
                         </f:for>
                     </f:if>
+                </li>
                 </p>
             </div>
         </f:for>
     </ul>
 </f:if>
-</div>

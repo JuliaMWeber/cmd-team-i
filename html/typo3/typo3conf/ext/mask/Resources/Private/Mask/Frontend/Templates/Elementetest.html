@@ -1,0 +1,11 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.tx_mask_text}">
+    {data.tx_mask_text -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_doze}">
+    <f:for each="{data.tx_mask_doze}" as="data_item">
+        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+    </f:for>
+</f:if>

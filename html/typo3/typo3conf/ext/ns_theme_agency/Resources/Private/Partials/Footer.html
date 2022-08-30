@@ -1,63 +1,75 @@
+
 <!-- Footer -->
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
+<footer xmlns:languageMenu="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
 				<span class="copyright">
-					<f:cObject typoscriptObjectPath="lib.copyright" /></span>
-				<!-- <span class="copyright">Copyright &#9400; CMS SoSe22</span> -->
-			</div>
-			<div class="col-md-4">
-				<ul class="list-inline social-buttons">
-					<f:if condition="{settings.seo_twitter_link}">
-						<li class="list-inline-item">
-							<f:link.typolink parameter="{settings.seo_twitter_link}" target="_blank">
-								<i class="fab fa-twitter"></i>
-							</f:link.typolink>
-						</li>
-					</f:if>
-					<f:if condition="{settings.seo_facebook_link}">
-						<li class="list-inline-item">
-							<f:link.typolink parameter="{settings.seo_facebook_link}" target="_blank">
-								<i class="fab fa-facebook-f"></i>
-							</f:link.typolink>
-						</li>
-					</f:if>
-					<f:if condition="{settings.seo_linkedin_link}">
-						<li class="list-inline-item">
-							<f:link.typolink parameter="{settings.seo_linkedin_link}" target="_blank">
-								<i class="fab fa-linkedin-in"></i>
-							</f:link.typolink>
-						</li>
-					</f:if>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<f:render section="FooterMenu" arguments="{FooterMenu: FooterMenu}" />
-				<f:cObject typoscriptObjectPath="lib.footer_left" />
-			</div>
-			<!-- <div class="col-md-4">
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="https://www.thm.de/site/datenschutz.html"
-							target="_blank">Datenschutz</a></li>
-					<li class="list-inline-item"><a href="https://www.thm.de/site/impressum.html"
-							target="_blank">Impressum</a></li>
-				</ul>
-			</div> -->
-		</div>
-	</div>
+					<f:cObject typoscriptObjectPath="lib.copyright"/></span>
+                <!-- <span class="copyright">Copyright &#9400; CMS SoSe22</span> -->
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <f:if condition="{settings.seo_twitter_link}">
+                        <li class="list-inline-item">
+                            <f:link.typolink parameter="{settings.seo_twitter_link}" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </f:link.typolink>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.seo_facebook_link}">
+                        <li class="list-inline-item">
+                            <f:link.typolink parameter="{settings.seo_facebook_link}" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </f:link.typolink>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.seo_linkedin_link}">
+                        <li class="list-inline-item">
+                            <f:link.typolink parameter="{settings.seo_linkedin_link}" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </f:link.typolink>
+                        </li>
+                    </f:if>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <f:render section="FooterMenu" arguments="{FooterMenu: FooterMenu}"/>
+                <f:cObject typoscriptObjectPath="lib.footer_left"/>
+            </div>
+            <div>
+                <!-- <div class="col-md-4">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.thm.de/site/datenschutz.html"
+                                target="_blank">Datenschutz</a></li>
+                        <li class="list-inline-item"><a href="https://www.thm.de/site/impressum.html"
+                                target="_blank">Impressum</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </footer>
 
 <f:section name="FooterMenu">
-	<f:if condition="{FooterMenu}">
-		<ul class="list-inline quicklinks">
-			<f:for each="{FooterMenu}" as="item">
-				<li class="list-inline-item">
-					<a href="{item.link}" id="nav-item-{item.data.uid}" target="_blank">
-						{item.title}
-					</a>
-				</li>
-			</f:for>
-		</ul>
-	</f:if>
+    <f:if condition="{FooterMenu}">
+        <ul class="list-inline quicklinks">
+            <f:for each="{FooterMenu}" as="item">
+                <li class="list-inline-item">
+                    <a href="{item.link}" id="nav-item-{item.data.uid}" target="_blank">
+                        {item.title}
+                    </a>
+                </li>
+				<li>
+
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+
+    <select onchange="location = this.value;">
+        <option value="Language">Language</option>
+        <option value="https://team-i.abija.de/en/">English</option>
+        <option value="https://team-i.abija.de/de/">Deutsch</option>
+    </select>
 </f:section>

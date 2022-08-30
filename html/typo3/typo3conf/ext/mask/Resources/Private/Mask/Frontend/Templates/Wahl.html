@@ -1,18 +1,39 @@
-<f:if condition="{data.header}">
-    {data.header}
-</f:if>
-<f:if condition="{data.tx_mask_verantwortlicher}">
-    {data.tx_mask_verantwortlicher}
-</f:if>
-<f:if condition="{data.tx_mask_team}">
-    {data.tx_mask_team}
-</f:if>
-<f:if condition="{data.tx_mask_vorleistungen}">
-    {data.tx_mask_vorleistungen}
-</f:if>
-<f:if condition="{data.tx_mask_leistungen}">
-    {data.tx_mask_leistungen}
-</f:if>
-<f:if condition="{data.bodytext}">
-    {data.bodytext -> f:format.nl2br()}
-</f:if>
+<div>
+    <div  class="modulinhalt">
+        <div class="modultitle">
+        <f:if condition="{data.header}">
+            {data.header}
+        </f:if>
+        </div>
+    </div>
+    </br>
+    <div  class="modulinhalt">
+        <f:if condition="{data.tx_mask_verantwortlicher}">
+            <div class="modullabel">Verantwortlicher:&nbsp;</div> {data.tx_mask_verantwortlicher}
+        </f:if>
+    </div>
+    </br>
+    <div  class="modulinhalt">
+        <f:if condition="{data.tx_mask_team}">
+            <div class="modullabel">Team:&nbsp;</div>  {data.tx_mask_team}
+        </f:if>
+    </div>
+    </br>
+    <div class="modulinhalt">
+        <f:if condition="{data.tx_mask_vorleistungen}">
+            <div class="modullabel">Prüfungsvorleistung:&nbsp;</div> {data.tx_mask_vorleistungen}
+        </f:if>
+    </div>
+    </br>
+    <div class="modulinhalt">
+        <f:if condition="{data.tx_mask_leistungen}">
+            <div class="modullabel">Prüfungsleistung:&nbsp;</div> {data.tx_mask_leistungen}
+        </f:if>
+    </div>
+    </br>
+    <div class="modulbeschreibung">
+        <f:if condition="{data.bodytext}">
+            <div class="modullabel">Beschreibung</div> {data.bodytext -> f:format.nl2br()}
+        </f:if>
+    </div>
+</div>

@@ -1,8 +1,21 @@
-<f:if condition="{data.header}">
-    {data.header}
-</f:if>
-<f:if condition="{data.tx_mask_schwerpunkte}">
-    <f:for each="{data.tx_mask_schwerpunkte}" as="data_item">
-        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
-    </f:for>
+
+<f:if condition="{data.tx_mask_schwerpunktwahlmodule}">
+    <ul>
+        <f:for each="{data.tx_mask_schwerpunktwahlmodule}" as="data_item">
+            <button class="accordion">
+                <f:if condition="{data_item.tx_mask_schwerpunktname}">
+                    {data_item.tx_mask_schwerpunktname}
+                </f:if>
+            </button>
+            <div class="panel">
+                <p>
+                    <f:if condition="{data_item.tx_mask_module}">
+                        <f:for each="{data_item.tx_mask_module}" as="data_item_item">
+                            <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+                        </f:for>
+                    </f:if>
+                </p>
+            </div>
+        </f:for>
+    </ul>
 </f:if>

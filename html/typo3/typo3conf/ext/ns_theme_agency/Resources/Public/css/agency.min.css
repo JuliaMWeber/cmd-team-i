@@ -22,6 +22,16 @@ a:hover {
     text-decoration: none;
 }
 
+.news a {
+    color: #80ba24;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+
 .text-primary {
     color: #80ba24 !important
 }
@@ -121,12 +131,12 @@ img::-moz-selection {
     text-transform: uppercase;
     color: #fff;
     border: 0;
-    background-color: #fed136;
+    background-color: #80ba24;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: #80ba24;
     font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
@@ -212,6 +222,13 @@ header.masthead .intro-text .intro-heading {
     line-height: 50px;
     margin-bottom: 25px;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+@media (max-width:425px) {
+    header.masthead .intro-text .intro-heading {
+        font-size: 1rem;
+
+    }
 }
 
 @media (min-width:768px) {

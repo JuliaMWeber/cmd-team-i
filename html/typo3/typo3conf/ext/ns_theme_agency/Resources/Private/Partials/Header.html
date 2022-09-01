@@ -77,4 +77,17 @@
     </f:for>
     </ul>
     </f:if>
+
+    <f:for each="{languagenavigation}" as="item">
+        <f:if condition="{item.available}">
+            <f:then>
+                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                    {item.navigationTitle}
+                </a>
+            </f:then>
+            <f:else>
+                <span>{item.navigationTitle}</span>
+            </f:else>
+        </f:if>
+    </f:for>
 </f:section>

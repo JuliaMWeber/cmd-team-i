@@ -67,9 +67,16 @@
         </ul>
     </f:if>
 
-    <select onchange="location = this.value;">
-        <option value="Language">Language</option>
-        <option value="https://team-i.abija.de/en/">English</option>
-        <option value="https://team-i.abija.de/de/">Deutsch</option>
-    </select>
+    <f:for each="{languagenavigation}" as="item">
+        <f:if condition="{item.available}">
+            <f:then>
+                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                    {item.navigationTitle}
+                </a>
+            </f:then>
+            <f:else>
+                <span>{item.navigationTitle}</span>
+            </f:else>
+        </f:if>
+    </f:for>
 </f:section>

@@ -230,6 +230,57 @@ lib.primarymenu {
   }
 }
 
+lib.language_text = COA
+lib.language_text {
+    20 = HMENU
+    20 {
+        special = language
+        special.value = 0,1
+        special.normalWhenNoLanguage = 0
+        wrap =
+        1 = TMENU
+        1 {
+            noBlur = 1
+            NO = 1
+            NO {
+                doNotLinkIt = 1
+                stdWrap.override = &nbsp;de&nbsp; || &nbsp;en&nbsp;
+                stdWrap {
+                    typolink {
+                        parameter.data = page:uid
+                        additionalParams = &L=0 || &L=1
+                        ATagParams = hreflang="de-DE" || hreflang="en-GB"
+                        ATagParams = class="bread_link_small"
+                        addQueryString = 1
+                        addQueryString.exclude = L,id,no_cache
+                        addQueryString.method = GET
+                        titleText.value = Hier Klicken!
+                        no_cache = 1
+                    }
+                }
+            }
+            ACT < .NO
+            ACT.linkWrap = |
+            ACT.stdWrap.typolink.ATagParams = class="bread_link_small active"
+
+            ## Normaler Zustand des Sprachumschalters
+            USERDEF1 < .NO
+            USERDEF1 {
+                linkWrap = |
+                stdWrap.typolink >
+            }
+
+            ## Aktiver Zustand für ausgewähltes Land
+            USERDEF2 < .ACT
+            USERDEF2 {
+                linkWrap = |
+                stdWrap.typolink >
+            }
+        }
+    }
+    wrap = |
+}
+
 2 < .1
 2 {
   wrap = <ul class="dropdown-menu">|</ul>
@@ -263,6 +314,31 @@ lib.footer_left {
 2 < .1
 2 {
   wrap = <ul class="dropdown-menu">|</ul>
+}
+
+page {
+  10 {
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+        levels = 2
+        as = headerMenu
+        expandAll = 1
+        includeSpacer = 1
+        titleField = nav_title // title
+      }
+    }
+  }
+}
+
+page {
+    10.dataProcessing {
+        40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        40 {
+            languages = 0, 1
+            as = languagenavigation
+        }
+    }
 }
 
 //page.5 < PRIMARYMENU

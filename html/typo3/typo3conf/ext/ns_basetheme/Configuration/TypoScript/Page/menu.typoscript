@@ -117,3 +117,34 @@ lib.breadcrumb {
         }
     }
 }
+
+lib.language_image = HMENU
+lib.language_image {
+    special = language
+    special.value = 0,1
+    special.normalWhenNoLanguage = 0
+    1 = GMENU
+    1 {
+        NO {
+            doNotLinkIt = 1
+            XY = [5.w], [5.h]
+            ATagParams = class="img-language link"
+            5 = IMAGE
+            5 {
+                file = fileadmin/img/flags/DE.png || fileadmin/img/flags/GB.png
+                file.width = 30c
+                file.height = 25
+                border = 0
+                offset = 0
+            }
+        }
+        ACT < .NO
+        ACT = 1
+        ACT.ATagParams = class="img-language active"
+        USERDEF1 < .NO
+        USERDEF1 = 1
+        USERDEF1.noLink = 1
+
+        USERDEF2 < .USERDEF1
+    }
+}

@@ -9,3 +9,14 @@
 
 # Includes Page Configuration
 @import "EXT:ns_theme_agency/Configuration/TypoScript/Page"
+
+page = PAGE
+page {
+    10.dataProcessing {
+        40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        40 {
+            languages = "auto"
+            as = languagenavigation
+        }
+    }
+}

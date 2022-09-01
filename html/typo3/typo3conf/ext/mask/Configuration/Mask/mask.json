@@ -78,29 +78,6 @@
                     "shortLabel": "",
                     "sorting": 0
                 },
-                "link_mit_icon": {
-                    "color": "#000000",
-                    "colorOverlay": "#000000",
-                    "columns": [
-                        "tx_mask_button",
-                        "tx_mask_link"
-                    ],
-                    "description": "",
-                    "descriptions": [
-                        "",
-                        ""
-                    ],
-                    "icon": "",
-                    "iconOverlay": "",
-                    "key": "link_mit_icon",
-                    "label": "Link mit Icon",
-                    "labels": [
-                        "",
-                        ""
-                    ],
-                    "shortLabel": "",
-                    "sorting": 8
-                },
                 "omar_accordeon": {
                     "color": "#000000",
                     "colorOverlay": "#000000",
@@ -203,11 +180,6 @@
                         "tx_mask_bild": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
-                "tx_mask_button": {
-                    "tt_content": {
-                        "tx_mask_button": "int(11) unsigned DEFAULT '0' NOT NULL"
-                    }
-                },
                 "tx_mask_datenblatt": {
                     "tt_content": {
                         "tx_mask_datenblatt": "varchar(255) DEFAULT '' NOT NULL"
@@ -221,11 +193,6 @@
                 "tx_mask_leistungen": {
                     "tt_content": {
                         "tx_mask_leistungen": "varchar(255) DEFAULT '' NOT NULL"
-                    }
-                },
-                "tx_mask_link": {
-                    "tt_content": {
-                        "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
                 "tx_mask_linkundicon": {
@@ -318,45 +285,6 @@
                     "key": "bild",
                     "type": "media"
                 },
-                "tx_mask_button": {
-                    "cTypes": [
-                        "ns_logos"
-                    ],
-                    "config": {
-                        "appearance": {
-                            "collapseAll": 1,
-                            "enabledControls": {
-                                "delete": 1,
-                                "dragdrop": 1,
-                                "hide": 1,
-                                "info": 1,
-                                "localize": 1,
-                                "new": 1,
-                                "sort": 1
-                            },
-                            "levelLinksPosition": "top",
-                            "showAllLocalizationLink": 1,
-                            "showNewRecordLink": 1,
-                            "showPossibleLocalizationRecords": 1,
-                            "useSortable": 1
-                        },
-                        "foreign_sortby": "sorting",
-                        "foreign_table": "tt_content",
-                        "overrideChildTca": {
-                            "columns": {
-                                "colPos": {
-                                    "config": {
-                                        "default": 999
-                                    }
-                                }
-                            }
-                        },
-                        "type": "inline"
-                    },
-                    "fullKey": "tx_mask_button",
-                    "key": "button",
-                    "type": "content"
-                },
                 "tx_mask_datenblatt": {
                     "config": {
                         "renderType": "inputLink",
@@ -402,15 +330,6 @@
                     "fullKey": "tx_mask_leistungen",
                     "key": "leistungen",
                     "type": "string"
-                },
-                "tx_mask_link": {
-                    "config": {
-                        "renderType": "inputLink",
-                        "type": "input"
-                    },
-                    "fullKey": "tx_mask_link",
-                    "key": "link",
-                    "type": "link"
                 },
                 "tx_mask_linkundicon": {
                     "cTypes": [

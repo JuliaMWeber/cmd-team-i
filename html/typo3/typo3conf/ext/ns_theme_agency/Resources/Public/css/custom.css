@@ -354,13 +354,7 @@ footer .quicklinks a:hover {
 }
 
 hr {
-    border-top: solid 5px #4a5c66;
-    max-width: 50%;
-    margin-left: 0;
-}
-
-.article {
-    padding: 3em;
+    border-top: solid 1px #fff;
 }
 
 .ce-textpic,
@@ -767,15 +761,17 @@ header.masthead .intro-text .intro-lead-in {
     margin: 3em 0;
 }
 
-#accordion567 {
-    margin-bottom: 5em;
-}
 
-#kontaktformular-627 {
-    border-radius: 0.2em;
-    text-align: center;
-    border: solid 1px green;
-    padding: 4em;
-    margin: 4em;
-    box-shadow: 4px 8px 40px 8px rgb(88 146 255 / 20%)
+.nav-language img {
+    outline: 3px #ddd solid;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+.img-language.active img {
+    outline: 3px #C31DC4 solid;
+    opacity: 1.0;
+}
+.img-language.link img {
+    outline: 3px #F9A6F9 solid;
+    opacity: 0.7;
 }

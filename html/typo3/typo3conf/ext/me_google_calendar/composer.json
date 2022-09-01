@@ -1,0 +1,47 @@
+{
+	"name": "mediaessenz/me-google-calendar",
+	"type": "typo3-cms-extension",
+	"description": "A fullcalendar implementation for TYPO3 CMS",
+	"homepage": "https://www.typo3-webagentur.com",
+    "support": {
+        "source": "https://gitlab.com/mediaessenz/me-google-calendar",
+        "issues": "https://gitlab.com/mediaessenz/me-google-calendar/issues"
+    },
+	"keywords": [
+		"TYPO3 CMS",
+		"plugin",
+		"frontend",
+		"fullcalendar",
+		"googlecalender",
+		"calendar",
+		"google"
+	],
+	"authors": [
+		{
+			"name": "Alexander Grein",
+			"email": "alexander.grein@gmail.com",
+			"role": "Developer",
+			"homepage": "https://www.typo3-webagentur.com"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"typo3/cms-core": "^9.5 || ^10.4 || ^11.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"MediaEssenz\\MeGoogleCalendar\\": "Classes"
+		}
+	},
+	"replace": {
+		"typo3-ter/me-google-calendar": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "me_google_calendar"
+		},
+		"branch-alias": {
+			"dev-master": "4.13.x-dev"
+		}
+	}
+}

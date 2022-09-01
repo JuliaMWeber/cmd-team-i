@@ -1,0 +1,22 @@
+<div>
+    <f:if condition="{data.tx_mask_schwerpunktwahlpflicht}">
+        <ul>
+            <f:for each="{data.tx_mask_schwerpunktwahlpflicht}" as="data_item">
+                <button class="accordion">
+                    <f:if condition="{data_item.tx_mask_modulname}">
+                        {data_item.tx_mask_modulname}
+                    </f:if>
+                </button>
+                <div class="panel">
+                    <p>
+                        <f:if condition="{data_item.tx_mask_modul}">
+                            <f:for each="{data_item.tx_mask_modul}" as="data_item_item">
+                                <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+                            </f:for>
+                        </f:if>
+                    </p>
+                </div>
+            </f:for>
+        </ul>
+    </f:if>
+</div>

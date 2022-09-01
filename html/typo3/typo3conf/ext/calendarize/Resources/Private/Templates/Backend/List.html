@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+			xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+			xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+			data-namespace-typo3-fluid="true">
+
+<f:layout name="Backend"/>
+
+<f:section name="Content">
+
+	<h1>Calendarize</h1>
+
+	<f:flashMessages/>
+	<f:render partial="Backend/Filter" arguments="{_all}"/>
+
+	<fieldset class="form-group">
+		<f:if condition="{typeLocations}">
+			<f:then>
+				<p>
+					<f:for each="{typeLocations}" key="table" as="typePids">
+						<f:for each="{typePids}" key="pid" as="value">
+							<f:if condition="{options.type} === '' || {options.type} === {value}">
+								<be:link.newRecord class="btn btn-primary" table="{table}" pid="{pid}" style="margin-bottom:4px"
+																	 returnUrl="{f:be.uri(route: 'web_CalendarizeCalendarize')}">
+									<core:icon identifier="actions-document-new"/>
+									{value} <f:translate key="LLL:EXT:calendarize/Resources/Private/Language/locallang_mod.xlf:on">on</f:translate> {pids.{pid}}
+								</be:link.newRecord>
+							</f:if>
+						</f:for>
+					</f:for>
+				</p>
+			</f:then>
+			<f:else>
+				<p>
+					<f:translate key="LLL:EXT:calendarize/Resources/Private/Language/locallang_mod.xlf:note.create_events">
+						Note: If you create first events in Storage folder, the create buttons will appear in this location
+					</f:translate>
+				</p>
+			</f:else>
+		</f:if>
+	</fieldset>
+
+	<f:render partial="Backend/List" arguments="{_all}"/>
+</f:section>
+</html>

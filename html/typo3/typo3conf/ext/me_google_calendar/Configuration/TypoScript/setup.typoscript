@@ -1,0 +1,114 @@
+plugin.tx_megooglecalendar {
+    view {
+        templateRootPath = {$plugin.tx_megooglecalendar.view.templateRootPath}
+        partialRootPath = {$plugin.tx_megooglecalendar.view.partialRootPath}
+        layoutRootPath = {$plugin.tx_megooglecalendar.view.layoutRootPath}
+    }
+
+    persistence {
+        storagePid = {$plugin.tx_megooglecalendar.persistence.storagePid}
+        recursive = {$plugin.tx_megooglecalendar.persistence.recursive}
+    }
+
+    features {
+        # uncomment the following line to enable the new Property Mapper.
+        # rewrittenPropertyMapper = 1
+    }
+
+    settings {
+        jQueryPath = {$plugin.tx_megooglecalendar.settings.jQueryPath}
+        jQueryUiPath = {$plugin.tx_megooglecalendar.settings.jQueryUiPath}
+        fullCalendarPath = {$plugin.tx_megooglecalendar.settings.fullCalendarPath}
+        gcalPath = {$plugin.tx_megooglecalendar.settings.gcalPath}
+        meGoogleCalendarPath = {$plugin.tx_megooglecalendar.settings.meGoogleCalendarPath}
+        jsLibsPosition = {$plugin.tx_megooglecalendar.settings.jsLibsPosition}
+        cssPath = {$plugin.tx_megooglecalendar.settings.cssPath}
+        cssThemePath = {$plugin.tx_megooglecalendar.settings.cssThemePath}
+        themeSystem = {$plugin.tx_megooglecalendar.settings.themeSystem}
+        hideHeader = {$plugin.tx_megooglecalendar.settings.hideHeader}
+        headerLeft = {$plugin.tx_megooglecalendar.settings.headerLeft}
+        headerCenter = {$plugin.tx_megooglecalendar.settings.headerCenter}
+        headerRight = {$plugin.tx_megooglecalendar.settings.headerRight}
+        hideFooter = {$plugin.tx_megooglecalendar.settings.hideFooter}
+        footerLeft = {$plugin.tx_megooglecalendar.settings.footerLeft}
+        footerCenter = {$plugin.tx_megooglecalendar.settings.footerCenter}
+        footerRight = {$plugin.tx_megooglecalendar.settings.footerRight}
+        defaultView = {$plugin.tx_megooglecalendar.settings.defaultView}
+        allDaySlot = {$plugin.tx_megooglecalendar.settings.allDaySlot}
+        firstDay = {$plugin.tx_megooglecalendar.settings.firstDay}
+        scrollTime = {$plugin.tx_megooglecalendar.settings.scrollTime}
+        weekends = {$plugin.tx_megooglecalendar.settings.weekends}
+        weekNumberCalculation = {$plugin.tx_megooglecalendar.settings.weekNumberCalculation}
+        weekNumbers = {$plugin.tx_megooglecalendar.settings.weekNumbers}
+        weekNumbersWithinDays = {$plugin.tx_megooglecalendar.settings.weekNumbersWithinDays}
+        minTime = {$plugin.tx_megooglecalendar.settings.minTime}
+        maxTime = {$plugin.tx_megooglecalendar.settings.maxTime}
+        hideTitle = {$plugin.tx_megooglecalendar.settings.hideTitle}
+        titleFormatMonth = {$plugin.tx_megooglecalendar.settings.titleFormat.month}
+        titleFormatWeek = {$plugin.tx_megooglecalendar.settings.titleFormat.week}
+        titleFormatDay = {$plugin.tx_megooglecalendar.settings.titleFormat.day}
+        columnFormatMonth = {$plugin.tx_megooglecalendar.settings.columnFormat.month}
+        columnFormatWeek = {$plugin.tx_megooglecalendar.settings.columnFormat.week}
+        columnFormatDay = {$plugin.tx_megooglecalendar.settings.columnFormat.day}
+        listDayFormat = {$plugin.tx_megooglecalendar.settings.listDayFormat}
+        listDayAltFormat = {$plugin.tx_megooglecalendar.settings.listDayAltFormat}
+        timeFormatAgenda = {$plugin.tx_megooglecalendar.settings.timeFormat.agenda}
+        timeFormatList = {$plugin.tx_megooglecalendar.settings.timeFormat.list}
+        timeFormatGeneral = {$plugin.tx_megooglecalendar.settings.timeFormat.general}
+        timeFormatMonth = {$plugin.tx_megooglecalendar.settings.timeFormat.month}
+        timeFormatWeek = {$plugin.tx_megooglecalendar.settings.timeFormat.week}
+        timeFormatDay = {$plugin.tx_megooglecalendar.settings.timeFormat.day}
+        timeZone = {$plugin.tx_megooglecalendar.settings.timeZone}
+        hideIcalDownloadButton = {$plugin.tx_megooglecalendar.settings.hideIcalDownloadButton}
+        hideAddtoGoogleCalendarButton = {$plugin.tx_megooglecalendar.settings.hideAddtoGoogleCalendarButton}
+        noGoogleMapsLink = {$plugin.tx_megooglecalendar.settings.noGoogleMapsLink}
+        height = {$plugin.tx_megooglecalendar.settings.height}
+        aspectRatio = {$plugin.tx_megooglecalendar.settings.aspectRatio}
+        eventLimit = {$plugin.tx_megooglecalendar.settings.eventLimit}
+        overrideFlexformSettingsIfEmpty = {$plugin.tx_megooglecalendar.settings.overrideFlexformSettingsIfEmpty}
+        eIdGetIcsUrl = {$plugin.tx_megooglecalendar.settings.eIdGetIcsUrl}
+        language = {$plugin.tx_megooglecalendar.settings.language}
+    }
+}
+
+page {
+    {$plugin.tx_megooglecalendar.settings.jsLibsPosition} {
+        megooglecalendar_jquery = {$plugin.tx_megooglecalendar.settings.jQueryPath}
+        megooglecalendar_jquery.if.isTrue = {$plugin.tx_megooglecalendar.settings.jQueryPath}
+        megooglecalendar_jquery.external = {$plugin.tx_megooglecalendar.settings.jQueryExternal}
+        megooglecalendar_jquery.disableCompression = {$plugin.tx_megooglecalendar.settings.jQueryDisableCompression}
+        megooglecalendar_jqueryui = {$plugin.tx_megooglecalendar.settings.jQueryUiPath}
+        megooglecalendar_jqueryui.if.isTrue = {$plugin.tx_megooglecalendar.settings.jQueryUiPath}
+        megooglecalendar_jqueryui.external = {$plugin.tx_megooglecalendar.settings.jQueryUiExternal}
+        megooglecalendar_jqueryui.disableCompression = {$plugin.tx_megooglecalendar.settings.jQueryUiDisableCompression}
+        megooglecalendar_moment = {$plugin.tx_megooglecalendar.settings.fullCalendarMomentPath}
+        megooglecalendar_moment.if.isTrue = {$plugin.tx_megooglecalendar.settings.fullCalendarMomentPath}
+        megooglecalendar_moment.disableCompression = {$plugin.tx_megooglecalendar.settings.disableCompression}
+    }
+
+    {$plugin.tx_megooglecalendar.settings.jsPosition} {
+        megooglecalendar_fullcalendar = {$plugin.tx_megooglecalendar.settings.fullCalendarPath}
+        megooglecalendar_fullcalendar.if.isTrue = {$plugin.tx_megooglecalendar.settings.fullCalendarPath}
+        megooglecalendar_fullcalendar.disableCompression = {$plugin.tx_megooglecalendar.settings.fullCalendarDisableCompression}
+        megooglecalendar_languageall = {$plugin.tx_megooglecalendar.settings.fullCalendarLangAllPath}
+        megooglecalendar_languageall.if.isTrue = {$plugin.tx_megooglecalendar.settings.fullCalendarLangAllPath}
+        megooglecalendar_languageall.disableCompression = {$plugin.tx_megooglecalendar.settings.disableCompression}
+        megooglecalendar_gcal = {$plugin.tx_megooglecalendar.settings.gcalPath}
+        megooglecalendar_gcal.if.isTrue = {$plugin.tx_megooglecalendar.settings.gcalPath}
+        megooglecalendar_gcal.disableCompression = {$plugin.tx_megooglecalendar.settings.disableCompression}
+        megooglecalendar = {$plugin.tx_megooglecalendar.settings.meGoogleCalendarPath}
+        megooglecalendar.if.isTrue = {$plugin.tx_megooglecalendar.settings.meGoogleCalendarPath}
+        megooglecalendar.disableCompression = {$plugin.tx_megooglecalendar.settings.disableCompression}
+    }
+
+    includeCSS {
+        megooglecalendar_main = {$plugin.tx_megooglecalendar.settings.cssPath}
+        megooglecalendar_main.if.isTrue = {$plugin.tx_megooglecalendar.settings.cssPath}
+        megooglecalendar_print = {$plugin.tx_megooglecalendar.settings.printCssPath}
+        megooglecalendar_print.media = print
+        megooglecalendar_print.if.isTrue = {$plugin.tx_megooglecalendar.settings.printCssPath}
+        megooglecalendar_theme = {$plugin.tx_megooglecalendar.settings.cssThemePath}
+        megooglecalendar_theme.if.isTrue = {$plugin.tx_megooglecalendar.settings.cssThemePath}
+        megooglecalendar_theme.external = {$plugin.tx_megooglecalendar.settings.cssThemePathExternal}
+    }
+}

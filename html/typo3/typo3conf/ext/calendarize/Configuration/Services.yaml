@@ -1,0 +1,62 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  HDNET\Calendarize\:
+    resource: '../Classes/*'
+
+  HDNET\Calendarize\EventListener\CalendarizeFieldListener:
+    tags:
+      - name: event.listener
+        identifier: 'calendarizeField'
+        event: TYPO3\CMS\Core\Database\Event\AlterTableDefinitionStatementsEvent
+
+  HDNET\Calendarize\EventListener\ImportSingleIcalEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'importSingelIcal'
+        event: HDNET\Calendarize\Event\ImportSingleIcalEvent
+
+  HDNET\Calendarize\EventListener\BookingCountriesListener:
+    tags:
+      - name: event.listener
+        identifier: 'bookingCountries'
+        event: HDNET\Calendarize\Event\GenericActionAssignmentEvent
+
+  HDNET\Calendarize\EventListener\CategoryFilterEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'categoryFilter'
+        event: HDNET\Calendarize\Event\GenericActionAssignmentEvent
+
+  HDNET\Calendarize\EventListener\DefaultEventSearchListener:
+    tags:
+      - name: event.listener
+        identifier: 'defaultEventSearch'
+        event: HDNET\Calendarize\Event\IndexRepositoryFindBySearchEvent
+
+  HDNET\Calendarize\EventListener\DefaultEventConstraintsListener:
+    tags:
+      - name: event.listener
+        identifier: 'defaultEventConstraints'
+        event: HDNET\Calendarize\Event\IndexRepositoryDefaultConstraintEvent
+
+  HDNET\Calendarize\Command\CleanupCommandController:
+    tags:
+      - name: console.command
+        command: 'calendarize:cleanup'
+        schedulable: true
+
+  HDNET\Calendarize\Command\ImportCommandController:
+    tags:
+      - name: console.command
+        command: 'calendarize:import'
+        schedulable: true
+
+  HDNET\Calendarize\Command\ReindexCommandController:
+    tags:
+      - name: console.command
+        command: 'calendarize:reindex'
+        schedulable: true

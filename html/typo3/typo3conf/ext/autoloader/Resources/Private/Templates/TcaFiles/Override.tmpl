@@ -1,0 +1,11 @@
+<?php
+
+use HDNET\Autoloader\Utility\ArrayUtility;
+use HDNET\Autoloader\Utility\ModelUtility;
+
+$GLOBALS['TCA']['__tableName__'] = ModelUtility::getTcaOverrideInformation('__extensionKey__', '__tableName__');
+
+// custom manipulation calls here
+$custom = [];
+
+$GLOBALS['TCA']['__tableName__'] = ArrayUtility::mergeRecursiveDistinct($GLOBALS['TCA']['__tableName__'], $custom);

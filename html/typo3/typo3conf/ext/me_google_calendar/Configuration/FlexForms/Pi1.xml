@@ -1,0 +1,1105 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <!--  <langChildren>1</langChildren>!-->
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_general
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.calendarRecords>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.calendarRecords
+                            </label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_megooglecalendar_domain_model_calendar</allowed>
+                                <size>5</size>
+                                <minitems>0</minitems>
+                                <maxitems>99</maxitems>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.calendarRecords>
+                    <settings.hideTitle>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.hideTitle
+                            </label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.hideTitle>
+                    <settings.defaultView>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView_TS
+                                        </numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.defaultView>
+                    <settings.allDaySlot>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.allDaySlot
+                            </label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.allDaySlot>
+                    <settings.weekends>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekends
+                            </label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.weekends>
+                    <settings.weekNumbers>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekNumbers
+                            </label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.weekNumbers>
+                    <settings.weekNumbersWithinDays>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekNumbersWithinDays
+                            </label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.weekNumbersWithinDays>
+                    <settings.eventLimit>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.eventLimit
+                            </label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.eventLimit>
+                    <settings.firstDay>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay_TS
+                                        </numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay.I.0
+                                        </numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay.I.1
+                                        </numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.firstDay>
+                    <settings.minTime>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.minTime
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                                <checkbox></checkbox>
+                                <default>08:00:00</default>
+                            </config>
+                        </TCEforms>
+                    </settings.minTime>
+                    <settings.maxTime>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.maxTime
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                                <checkbox></checkbox>
+                                <default>18:00:00</default>
+                            </config>
+                        </TCEforms>
+                    </settings.maxTime>
+                    <settings.scrollTime>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.scrollTime
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                                <checkbox></checkbox>
+                                <default></default>
+                            </config>
+                        </TCEforms>
+                    </settings.scrollTime>
+                    <settings.weekMode>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode_TS
+                                        </numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode.I.fixed
+                                        </numIndex>
+                                        <numIndex index="1">fixed</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode.I.variable
+                                        </numIndex>
+                                        <numIndex index="1">variable</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.weekMode>
+                </el>
+            </ROOT>
+        </sDEF>
+        <s_header>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_header
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.hideHeader>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.hideHeader
+                            </label>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.hideHeader>
+                    <settings.headerLeft>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.headerLeft
+                            </label>
+                            <displayCond>FIELD:settings.hideHeader:REQ:false</displayCond>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev
+                                        </numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next
+                                        </numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today
+                                        </numIndex>
+                                        <numIndex index="1">today</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title
+                                        </numIndex>
+                                        <numIndex index="1">title</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE1]</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE2]</numIndex>
+                                    </numIndex>
+                                </items>
+                                <multible>2</multible>
+                                <size>5</size>
+                                <maxitems>11</maxitems>
+                                <selectedListStyle>width:150px</selectedListStyle>
+                                <itemListStyle>width:150px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.headerLeft>
+                    <settings.headerCenter>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.headerCenter
+                            </label>
+                            <displayCond>FIELD:settings.hideHeader:REQ:false</displayCond>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev
+                                        </numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next
+                                        </numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today
+                                        </numIndex>
+                                        <numIndex index="1">today</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title
+                                        </numIndex>
+                                        <numIndex index="1">title</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE1]</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE2]</numIndex>
+                                    </numIndex>
+                                </items>
+                                <multible>2</multible>
+                                <size>5</size>
+                                <maxitems>11</maxitems>
+                                <selectedListStyle>width:150px</selectedListStyle>
+                                <itemListStyle>width:150px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.headerCenter>
+                    <settings.headerRight>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.headerRight
+                            </label>
+                            <displayCond>FIELD:settings.hideHeader:REQ:false</displayCond>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev
+                                        </numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next
+                                        </numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today
+                                        </numIndex>
+                                        <numIndex index="1">today</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title
+                                        </numIndex>
+                                        <numIndex index="1">title</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE1]</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE2]</numIndex>
+                                    </numIndex>
+                                </items>
+                                <multible>2</multible>
+                                <size>5</size>
+                                <maxitems>11</maxitems>
+                                <selectedListStyle>width:150px</selectedListStyle>
+                                <itemListStyle>width:150px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.headerRight>
+                    <settings.hideFooter>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.hideFooter
+                            </label>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.hideFooter>
+                    <settings.footerLeft>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.footerLeft
+                            </label>
+                            <displayCond>FIELD:settings.hideFooter:REQ:false</displayCond>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev
+                                        </numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next
+                                        </numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today
+                                        </numIndex>
+                                        <numIndex index="1">today</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title
+                                        </numIndex>
+                                        <numIndex index="1">title</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE1]</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE2]</numIndex>
+                                    </numIndex>
+                                </items>
+                                <multible>2</multible>
+                                <size>5</size>
+                                <maxitems>11</maxitems>
+                                <selectedListStyle>width:150px</selectedListStyle>
+                                <itemListStyle>width:150px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.footerLeft>
+                    <settings.footerCenter>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.footerCenter
+                            </label>
+                            <displayCond>FIELD:settings.hideFooter:REQ:false</displayCond>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev
+                                        </numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next
+                                        </numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today
+                                        </numIndex>
+                                        <numIndex index="1">today</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title
+                                        </numIndex>
+                                        <numIndex index="1">title</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE1]</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE2]</numIndex>
+                                    </numIndex>
+                                </items>
+                                <multible>2</multible>
+                                <size>5</size>
+                                <maxitems>11</maxitems>
+                                <selectedListStyle>width:150px</selectedListStyle>
+                                <itemListStyle>width:150px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.footerCenter>
+                    <settings.footerRight>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.footerRight
+                            </label>
+                            <displayCond>FIELD:settings.hideFooter:REQ:false</displayCond>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev
+                                        </numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next
+                                        </numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today
+                                        </numIndex>
+                                        <numIndex index="1">today</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title
+                                        </numIndex>
+                                        <numIndex index="1">title</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month
+                                        </numIndex>
+                                        <numIndex index="1">month</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek
+                                        </numIndex>
+                                        <numIndex index="1">agendaWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay
+                                        </numIndex>
+                                        <numIndex index="1">agendaDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek
+                                        </numIndex>
+                                        <numIndex index="1">basicWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay
+                                        </numIndex>
+                                        <numIndex index="1">basicDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listDay
+                                        </numIndex>
+                                        <numIndex index="1">listDay</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listWeek
+                                        </numIndex>
+                                        <numIndex index="1">listWeek</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listMonth
+                                        </numIndex>
+                                        <numIndex index="1">listMonth</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.listYear
+                                        </numIndex>
+                                        <numIndex index="1">listYear</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.list
+                                        </numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE1]</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2
+                                        </numIndex>
+                                        <numIndex index="1">[SPACE2]</numIndex>
+                                    </numIndex>
+                                </items>
+                                <multible>2</multible>
+                                <size>5</size>
+                                <maxitems>11</maxitems>
+                                <selectedListStyle>width:150px</selectedListStyle>
+                                <itemListStyle>width:150px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.footerRight>
+                </el>
+            </ROOT>
+        </s_header>
+        <s_eventdetails>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_eventdetails
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.noGoogleMapsLink>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.noGoogleMapsLink
+                            </label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.noGoogleMapsLink>
+                    <settings.hideIcalDownloadButton>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.hideIcalDownloadButton
+                            </label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.hideIcalDownloadButton>
+                    <settings.hideAddtoGoogleCalendarButton>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.hideAddtoGoogleCalendarButton
+                            </label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.hideAddtoGoogleCalendarButton>
+                </el>
+            </ROOT>
+        </s_eventdetails>
+        <s_misc>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_misc
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.cssThemePath>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.cssThemePath_ref
+                            </label>
+                            <config>
+                                <checkbox></checkbox>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <default></default>
+                                <wizards type="array">
+                                    <_PADDING>2</_PADDING>
+                                    <link type="array">
+                                        <type>popup</type>
+                                        <title>Link</title>
+                                        <icon>link_popup.gif</icon>
+                                        <module type="array">
+                                            <name>wizard_element_browser</name>
+                                            <urlParameters type="array">
+                                                <mode>wizard</mode>
+                                                <act>file</act>
+                                            </urlParameters>
+                                        </module>
+                                        <params type="array">
+                                            <blindLinkOptions>page,url,mail,spec,folder</blindLinkOptions>
+                                            <allowedExtensions>css</allowedExtensions>
+                                        </params>
+                                        <JSopenParams>height=400,width=500,status=0,menubar=0,scrollbars=1
+                                        </JSopenParams>
+                                    </link>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.cssThemePath>
+                </el>
+            </ROOT>
+        </s_misc>
+    </sheets>
+</T3DataStructure>

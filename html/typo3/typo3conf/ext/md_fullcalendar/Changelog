@@ -1,0 +1,44 @@
+Version 3.0.1 (2022-03-17)
+    [FEATURE] Add template layouts
+
+    All changes
+    https://github.com/cdaecke/md_fullcalendar/compare/3.0.0...3.0.1
+
+Version 3.0.0 (2022-02-28)
+    [FEATURE] Compatibility with TYPO3 11
+    [FEATURE] Compatibility with ext:calendarize >= v12
+    [!!!][TASK] Upgrade fullcalendar.io from v4.3.1 to v5.10.2
+    See following URL for upgrade path, if you have changed the template, CSS or JS: https://fullcalendar.io/docs/upgrading-from-v4
+
+    All changes
+    https://github.com/cdaecke/md_fullcalendar/compare/2.0.3...3.0.0
+
+Version 2.0.3 (2021-10-21)
+    [FEATURE] Compatibility with ext:calendarize >= v11
+
+Version 2.0.2 (2021-04-04)
+    [FEATURE] Compatibility with ext:calendarize >= v8
+
+Version 2.0.1 (2020-08-31)
+    [FEATURE] Compatibility with ext:calendarize v7
+
+Version 2.0.0 (2020-08-19)
+    [FEATURE] TYPO3 10 compatibility
+
+Version 1.1.1 (2020-06-20)
+    [FEATURE] compatibility for ext:calendarize 6.0.0
+    [BUGFIX] Get all events for selected time slot regardless to time zone
+    [BUGFIX] Remove plus button for a day, when selecting a category filter
+
+    All changes
+    https://github.com/cdaecke/md_fullcalendar/compare/1.1.0...1.1.1
+
+Version 1.1.0 (2020-03-18)
+    [FEATURE] respect Record Storage Page in plugin
+    [TASK] update version for dependency of ext:calendarize
+
+    All changes
+    https://github.com/cdaecke/md_fullcalendar/compare/1.0.0...1.1.0
+
+Version 1.0.0 (2019-11-25)
+    Initial release

@@ -1,0 +1,131 @@
+@import "settings";
+@import "fullcalendar";
+
+/* me_google_calendar specific */
+.tx-me-google-calendar {
+  position: relative;
+}
+
+.fc-button-prev .fc-text-arrow, .fc-button-next .fc-text-arrow {
+  font-weight: bold;
+}
+
+.fc-text-arrow {
+  margin: 0 .1em;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  vertical-align: baseline;
+}
+
+.fc-loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1001;
+  background: url('../Images/big-f0f0f0.gif') no-repeat 50% 50%;
+  font-size: 0.9em;
+}
+
+.fc-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.fc-dialog {
+  position: absolute;
+  display: none;
+  text-align: left;
+}
+
+.fc-dialog .fc-description {
+  margin: 0.5em 0 1em 0;
+}
+
+.fc-dialog dl {
+  margin: 0 0 1em 0;
+}
+
+.fc-dialog dt {
+  float: left;
+  width: 70px;
+}
+
+.fc-dialog dd {
+  margin-left: 70px;
+}
+
+.fc-dialog .fc-buttons {
+  font-size: 0.8em;
+}
+
+.fc-icalbutton {
+  margin-right: 10px !important;
+}
+
+.fc-event.fc-red,
+.fc-agenda .fc-event.fc-red .fc-event-time,
+.fc-event.fc-red .fc-event-inner.fc-event-skin,
+.fc-list-item.fc-red .fc-event-dot,
+.fc-event.fc-red a {
+  background-color: $fc-red;
+  border-color: $fc-red;
+  color: #fff;
+}
+
+.fc-event.fc-green,
+.fc-agenda .fc-event.fc-green .fc-event-time,
+.fc-event.fc-green .fc-event-inner.fc-event-skin,
+.fc-list-item.fc-green .fc-event-dot,
+.fc-event.fc-green a {
+  background-color: $fc-green;
+  border-color: $fc-green;
+  color: #fff;
+}
+
+.fc-event.fc-blue,
+.fc-agenda.fc-blue .fc-event-time,
+.fc-event.fc-blue .fc-event-inner.fc-event-skin,
+.fc-list-item.fc-blue .fc-event-dot,
+.fc-event.fc-blue a {
+  background-color: $fc-blue;
+  border-color: $fc-blue;
+  color: #fff;
+}
+
+.fc-event.fc-grey,
+.fc-agenda .fc-event.fc-grey .fc-event-time,
+.fc-event.fc-grey .fc-event-inner.fc-event-skin,
+.fc-list-item.fc-grey .fc-event-dot,
+.fc-event.fc-grey a {
+  background-color: $fc-grey;
+  border-color: $fc-grey;
+  color: #fff;
+}
+
+.fc-event.fc-orange,
+.fc-agenda .fc-event.fc-orange .fc-event-time,
+.fc-event.fc-orange .fc-event-inner.fc-event-skin,
+.fc-list-item.fc-orange .fc-event-dot,
+.fc-event.fc-orange a {
+  background-color: $fc-orange;
+  border-color: $fc-orange;
+  color: #fff;
+}
+
+.fc-event.fc-purple,
+.fc-agenda .fc-event.fc-purple .fc-event-time,
+.fc-event.fc-purple .fc-event-inner.fc-event-skin,
+.fc-list-item.fc-purple .fc-event-dot,
+.fc-event.fc-purple a {
+  background-color: $fc-purple;
+  border-color: $fc-purple;
+  color: #fff;
+}

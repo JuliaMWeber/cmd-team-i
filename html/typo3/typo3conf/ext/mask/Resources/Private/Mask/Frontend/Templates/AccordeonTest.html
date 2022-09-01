@@ -1,0 +1,26 @@
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<f:if condition="{data.tx_mask_accordion_ce}">
+
+    <script type="text/javascript">
+        $(function() {
+            $( ".ge-accordion{data.uid}" ).accordion({
+                header: '> .fsc > .ce-header',
+                collapsible: true,
+                autoHeight: false,
+                heightStyle: 'content',
+                active: 0
+            });
+        });
+    </script>
+
+    <div id="c{data.uid}" class="ge-accordion ge-accordion{data.uid}" data-role="collapsible-set">
+        <f:for each="{data.tx_mask_accordion_ce}" as="data_item">
+            <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+        </f:for>
+    </div>
+
+</f:if>
+
+page.includeJSFooter.jqueryui = //code.jquery.com/ui/1.12.1/jquery-ui.js

@@ -1,6 +1,0 @@
-Templates
-=========
-
-.. toctree::
-
-	Changing/Index
